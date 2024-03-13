@@ -2,7 +2,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 
 import {
   FaMap,
@@ -52,10 +52,11 @@ function NavBar({ email, location }) {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <NavDropdown.Divider
+      {/* <NavDropdown.Divider
         className="m-3"
         style={{ height: "1px", width: "98%", background: "#999999" }}
-      />
+      /> */}
+      <hr />
     </>
   );
 }
