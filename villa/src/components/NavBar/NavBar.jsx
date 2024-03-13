@@ -1,52 +1,38 @@
+/* eslint-disable react/prop-types */
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
-// import { IoMdMail } from "react-icons/io";
-// import NavDropdown from 'react-bootstrap/NavDropdown';
-// import TopNavBar from "src/components/TopNavBar/TopNavBar.jsx"
+import Buttons from "../Button/Button";
 
-function NavBar() {
-  
+function NavBar({title}) {
+  const json = [
+    { desc: "Home" },
+    { desc: "Properties" },
+    { desc: "Property Details" },
+    { desc: "Contact Us" },
+  ];
   return (
     <>
-      {/* <TopNavBar /> */}
       <Navbar expand="lg" className="m-2">
         <Container>
           <Navbar.Brand href="#" className="text-uppercase fs-3 fw-bold">
-            villa
+            {title}
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end mx-4">
             <Nav>
-              <Nav.Link className="mx-4" href="#">
-                Home
-              </Nav.Link>
-              <Nav.Link className="mx-4" href="#">
-                Properties
-              </Nav.Link>
-              <Nav.Link className="mx-4" href="#">
-                Property Details
-              </Nav.Link>
-              <Nav.Link className="mx-4" href="#">
-                Contact Us
-              </Nav.Link>
+              {json.map((element, index) => {
+                return (
+                  <din key={index}>
+                    <Nav.Link className="mx-4" href="#">
+                      {element.desc}
+                    </Nav.Link>
+                  </din>
+                );
+              })}
             </Nav>
           </Navbar.Collapse>
-          <Button
-            variant="dark"
-            className="mt-2"
-            style={{ borderRadius: "50px" }}
-          >
-             {/* <Button
-              variant="danger"
-              className="justify-content-start"
-              style={{ borderRadius: "50px" }}
-            >
-              <IoMdMail />
-            </Button>{" "} */}
-            Schedule a visit
-          </Button>{" "}
+          <Buttons />
         </Container>
       </Navbar>
     </>
