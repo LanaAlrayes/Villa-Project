@@ -2,7 +2,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 import {
   FaMap,
@@ -13,39 +13,49 @@ import {
 } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
-function NavBar({email , location}) {
+function NavBar({ email, location }) {
   return (
     <>
-      <Navbar expand="lg" className="">
-        <Container style={{ height: "3rem" }}>
-          <Navbar.Brand href="#">
+      <Navbar expand="lg" style={{ height: "2rem"}}>
+        <Container>
+          <Navbar.Brand>
             {" "}
-            <IoMdMail /> {email}
+            <IoMdMail style={{ color: "#ff0000" }} />
+            <span className="fs-6 fw-semibold text-body-secondary m-2">
+              {email}
+            </span>
           </Navbar.Brand>
-          <Navbar.Brand href="#">
+          <div className="vr mt-3 mx-4" />
+          <Navbar.Brand>
             {" "}
-            <FaMap /> {location}
+            <FaMap style={{ color: "#ff0000" }} />
+            <span className="fs-6 fw-semibold text-body-secondary m-2">
+              {location}
+            </span>
           </Navbar.Brand>
-          <Navbar.Toggle />
+
           <Navbar.Collapse className="justify-content-end">
-            <Nav className="">
-              <Nav.Link xs={6} md={4}>
-                <FaFacebook roundedCircle />
+            <Nav>
+              <Nav.Link>
+                <FaFacebook />
               </Nav.Link>
-              <Nav.Link xs={6} md={4}>
-                <FaTwitter roundedCircle />
+              <Nav.Link>
+                <FaTwitter />
               </Nav.Link>
-              <Nav.Link xs={6} md={4}>
-                <FaLinkedin roundedCircle />
+              <Nav.Link>
+                <FaLinkedin />
               </Nav.Link>
-              <Nav.Link xs={6} md={4}>
-                <FaInstagram roundedCircle />
+              <Nav.Link>
+                <FaInstagram />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <NavDropdown.Divider  style={{ height: "0.1rem", width: "98%", background:"#999999" }} />
+      <NavDropdown.Divider
+        className="m-3"
+        style={{ height: "1px", width: "98%", background: "#999999" }}
+      />
     </>
   );
 }
