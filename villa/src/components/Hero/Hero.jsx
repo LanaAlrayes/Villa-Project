@@ -13,8 +13,8 @@ function Hero() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <Row className=" justify-content-start">
-            <Col className="text-start bg-danger " md="auto">
+          <Row className="justify-content-start">
+            <Col className="text-start bg-danger" md="auto">
               {" "}
               <span className="bg-light" >
                 Toronto,<span className="text-danger"> Canada</span>
@@ -26,6 +26,7 @@ function Hero() {
             </Col>
           </Row>
         </Carousel.Caption>
+        
       </Carousel.Item>
        <Carousel.Item>
         <img

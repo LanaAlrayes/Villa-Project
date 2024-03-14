@@ -2,7 +2,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-// import NavDropdown from "react-bootstrap/NavDropdown";
+import Badge from "react-bootstrap/Badge";
 
 import {
   FaMap,
@@ -16,20 +16,18 @@ import { IoMdMail } from "react-icons/io";
 function NavBar({ email, location }) {
   return (
     <>
-      <Navbar expand="lg" style={{ height: "2rem"}}>
+      <Navbar expand="lg" style={{ height: "3rem" }}>
         <Container>
           <Navbar.Brand>
             {" "}
-            <IoMdMail style={{ color: "#ff0000" }} />
-            <span className="fs-6 fw-semibold text-body-secondary m-2">
-              {email}
-            </span>
+            <IoMdMail className="link-danger" />
+            <span className="fs-6 fw-semibold text-black-50 m-2">{email}</span>
           </Navbar.Brand>
           <div className="vr mt-3 mx-4" />
           <Navbar.Brand>
             {" "}
-            <FaMap style={{ color: "#ff0000" }} />
-            <span className="fs-6 fw-semibold text-body-secondary m-2">
+            <FaMap className="link-danger" />
+            <span className="fs-6 fw-semibold text-black-50 m-2">
               {location}
             </span>
           </Navbar.Brand>
@@ -37,25 +35,41 @@ function NavBar({ email, location }) {
           <Navbar.Collapse className="justify-content-end">
             <Nav>
               <Nav.Link>
-                <FaFacebook />
+                <Badge
+                  className="fs-6 p-1 bg-secondary"
+                  style={{ borderRadius: "50%", height: "30px", width: "30px" }}
+                >
+                  <FaFacebook />
+                </Badge>
               </Nav.Link>
               <Nav.Link>
-                <FaTwitter />
+                <Badge
+                  className="fs-6 p-1 bg-secondary"
+                  style={{ borderRadius: "50%", height: "30px", width: "30px" }}
+                >
+                  <FaTwitter />
+                </Badge>
               </Nav.Link>
               <Nav.Link>
-                <FaLinkedin />
+                <Badge
+                  className="fs-6 p-1 bg-secondary"
+                  style={{ borderRadius: "50%", height: "30px", width: "30px" }}
+                >
+                  <FaLinkedin />
+                </Badge>
               </Nav.Link>
               <Nav.Link>
-                <FaInstagram />
+                <Badge
+                  className="fs-6 p-1 bg-secondary"
+                  style={{ borderRadius: "50%", height: "30px", width: "30px" }}
+                >
+                  <FaInstagram />
+                </Badge>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      {/* <NavDropdown.Divider
-        className="m-3"
-        style={{ height: "1px", width: "98%", background: "#999999" }}
-      /> */}
       <hr />
     </>
   );
