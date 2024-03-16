@@ -14,7 +14,7 @@ export const NavData = [
   { desc: "Contact Us" },
 ];
 
-export const Json = [
+export const HeroData = [
   {
     img: "public/banner-01.jpg",
     text: "Toronto, ",
