@@ -4,6 +4,7 @@ import TopNavBar from "./components/TopNavBar/TopNavBar";
 import Hero from "./components/Hero/Hero";
 import Featured from "./components/Featured/Featured";
 import View from "./components/View/View";
+import BestDeal from "./components/BestDeal/BestDeal";
 
 function App() {
   return (
@@ -15,11 +16,16 @@ function App() {
       <NavBar title="villa" />
       <Hero />
       <Featured
-        title="Featured"
+        title="| Featured"
         decs="Best Appartment"
         decs1="& Sea View"
-      />
+        />
       <View />
+      <BestDeal
+        title="| BEST DEAL"
+        decs="Find Your Best Deal"
+        decs1="Right Now!"
+      />
     </div>
   );
 }
