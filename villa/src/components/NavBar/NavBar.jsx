@@ -2,32 +2,28 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Buttons from "../Button/Button";
 
-function NavBar({title}) {
-  const json = [
-    { desc: "Home" },
-    { desc: "Properties" },
-    { desc: "Property Details" },
-    { desc: "Contact Us" },
-  ];
+import Buttons from "../Button/Button";
+import { NavData } from "../../tools/Json";
+
+function NavBar({ title }) {
   return (
     <>
-      <Navbar expand="lg" className="m-2">
+      <Navbar expand="lg" className="m-4">
         <Container>
           <Navbar.Brand href="#" className="text-uppercase fs-3 fw-bold">
             {title}
           </Navbar.Brand>
           <Navbar.Toggle />
-          <Navbar.Collapse className="justify-content-end mx-4">
+          <Navbar.Collapse className="justify-content-end">
             <Nav>
-              {json.map((element, index) => {
+              {NavData.map((element, index) => {
                 return (
-                  <din key={index}>
-                    <Nav.Link className="mx-4" href="#">
+                  <Navbar.Brand key={index}>
+                    <Nav.Link className="fs-6 text-dark fw-medium m-4" href="#">
                       {element.desc}
                     </Nav.Link>
-                  </din>
+                  </Navbar.Brand>
                 );
               })}
             </Nav>
