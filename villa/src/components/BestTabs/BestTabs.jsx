@@ -9,7 +9,7 @@ import Image from "react-bootstrap/Image";
 import CardBestDeal from "../CardBestDeal/CardBestDeal";
 import Buttons from "../Button/Button";
 
-function BestTabs({ title ,title1, title2,subtitle, subtitle1,subtitle2 }) {
+function BestTabs({ title, title1, title2, subtitle, subtitle1 }) {
   return (
     <Row>
       <Col className="mt-5">
@@ -41,14 +41,12 @@ function BestTabs({ title ,title1, title2,subtitle, subtitle1,subtitle2 }) {
               </Col>
               <Col xs={4}>
                 <Card.Body className="ps-5">
-                  <Card.Title className="fs-5 fw-bold pb-4">
-                    {title}
-                  </Card.Title>
+                  <Card.Title className="fs-5 fw-bold pb-4">{title}</Card.Title>
                   <Card.Subtitle className="fs-6 lh-base fw-normal mb-5">
                     {subtitle}
                     <br />
                     <br />
-                    {subtitle2}
+                    {subtitle1}
                   </Card.Subtitle>
                   <Buttons title="Schedule a visit" />
                 </Card.Body>
@@ -78,13 +76,13 @@ function BestTabs({ title ,title1, title2,subtitle, subtitle1,subtitle2 }) {
               <Col xs={4}>
                 <Card.Body className="ps-5">
                   <Card.Title className="fs-5 fw-bold pb-4">
-                   {title1}
+                    {title1}
                   </Card.Title>
                   <Card.Subtitle className="fs-6 lh-base fw-normal mb-5">
-                  {subtitle}
-                  </Card.Subtitle>
-                  <Card.Subtitle className="fs-6 lh-base fw-normal mb-4">
-                  {subtitle2}
+                    {subtitle}
+                    <br />
+                    <br />
+                    {subtitle1}
                   </Card.Subtitle>
                   <Buttons title="Schedule a visit" />
                 </Card.Body>
@@ -117,10 +115,10 @@ function BestTabs({ title ,title1, title2,subtitle, subtitle1,subtitle2 }) {
                     {title2}
                   </Card.Title>
                   <Card.Subtitle className="fs-6 lh-base fw-normal mb-5">
+                    {subtitle}
+                    <br />
+                    <br />
                     {subtitle1}
-                  </Card.Subtitle>
-                  <Card.Subtitle className="fs-6 lh-base fw-normal mb-4">
-                   {subtitle2}
                   </Card.Subtitle>
                   <Buttons title="Schedule a visit" />
                 </Card.Body>

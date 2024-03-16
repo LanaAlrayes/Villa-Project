@@ -24,13 +24,8 @@ function BestDeal({ title, decs, decs1 }) {
           subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           do eiusmod tempor pack incididunt ut labore et dolore
           magna aliqua quised ipsum suspendisse."
-
-          subtitle1="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          do eiusmod tempor pack incididunt ut Kinfolk tonx seitan crucifix 3 wolf moon bicycle 
-          rights keffiyeh snackwave wolf same vice, chillwave vexillologistlabore 
-          et dolore magna aliqua quised ipsum suspendisse."
-
-          subtitle2="Swag fanny pack lyft blog twee. JOMO ethical copper mug,
+          
+          subtitle1="Swag fanny pack lyft blog twee. JOMO ethical copper mug,
           succulents typewriter shaman DIY kitsch twee taiyaki fixie
           hella venmo after messenger poutine next level humblebrag
           swag franzen."
