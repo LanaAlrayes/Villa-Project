@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 function Question({question1,question2,question3}) {
   return (
     <div>
-      <Accordion className="my-5">
+      <Accordion defaultActiveKey="0" className="my-5 me-5">
         <Accordion.Item eventKey="0">
           <Accordion.Header>{question1}</Accordion.Header>
           <Accordion.Body>
@@ -31,7 +31,7 @@ function Question({question1,question2,question3}) {
           </Accordion.Body>
         </Accordion.Item>
 
-        <Accordion.Item eventKey="2">
+        <Accordion.Item eventKey="1">
           <Accordion.Header>{question3}</Accordion.Header>
           <Accordion.Body>
             Dolor <span className="fw-bolder">almesit amet</span>, consectetur
