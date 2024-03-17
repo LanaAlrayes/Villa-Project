@@ -31,7 +31,7 @@ function Question({question1,question2,question3}) {
           </Accordion.Body>
         </Accordion.Item>
 
-        <Accordion.Item eventKey="1">
+        <Accordion.Item eventKey="2">
           <Accordion.Header>{question3}</Accordion.Header>
           <Accordion.Body>
             Dolor <span className="fw-bolder">almesit amet</span>, consectetur
