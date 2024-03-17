@@ -30,89 +30,73 @@ function VideoView({ title, decs, decs1 }) {
       </Card>
       
       <Container>
-        <Row>
-          <Col xs={8}>
-            <Card className="translate-middle-y mx-5">
-              <Card.Img src="map.jpg" />
-            </Card>
-            <Row>
-              {ContactData.map((element, index) => (
-                <Col xs={2} key={index} className="translate-middle-y mx-4 mb-5" style={{ width:"350px" }}>
-                  <Card border="light" className="p-2 px-4 bg-danger-subtle">
-                    <Stack direction="horizontal" gap={3}>
-                      <Image src={element.img} />
-                      <Card.Body>
-                        <Card.Title className="fw-bolder">{element.title}</Card.Title>
-                        <Card.Subtitle className="text-muted text-black-50 fw-normal">
-                          {element.sub}
-                        </Card.Subtitle>
-                      </Card.Body>
-                    </Stack>
-                  </Card>
-                </Col>
-              ))}
-            </Row>
-          </Col>
-          <Col xs={4}>
-            <div
-              className="translate-middle-y bg-light-subtle p-4"
-              style={{ borderRadius: "10px" }}
-            >
-              <Form>
-                <Form.Group
-                  className="mb-3"
-                  controlId="exampleForm.ControlInput1"
-                >
-                  <Form.Label>Full Name</Form.Label>
-                  <Form.Control type="name" placeholder="Your Name ..." />
-                </Form.Group>
-
-                <Form.Group
-                  className="mb-3"
-                  controlId="exampleForm.ControlInput1"
-                >
-                  <Form.Label>Email Address</Form.Label>
-                  <Form.Control type="email" placeholder="Your E-mail..." />
-                </Form.Group>
-
-                <Form.Group
-                  className="mb-3"
-                  controlId="exampleForm.ControlInput1"
-                >
-                  <Form.Label>Subject</Form.Label>
-                  <Form.Control type="name" placeholder="Subject..." />
-                </Form.Group>
-
-                <Form.Group
-                  className="mb-3"
-                  controlId="exampleForm.ControlTextarea1"
-                >
-                  <Form.Label>Message</Form.Label>
-                  <Form.Control
-                    as="textarea"
-                    placeholder="Your Message"
-                    rows={5}
-                  />
-                </Form.Group>
-              </Form>
-              <Buttons title="Send Message" />
-            </div>
-          </Col>
-        </Row>
-        {/* <Row className="d-flex justify-content-between">
-          {ViewData.map((element, index) => (
-            <Col xs={4} key={index} className="w-25 mb-5">
-              <Card border="light" className="px-5 py-2 bg-danger-subtle">
-                <Stack direction="horizontal" gap={4}>
-                  <h1 className="fw-bolder text-danger">{element.title}</h1>
-                  <Card.Body>
-                    <Card.Subtitle>{element.sub}</Card.Subtitle>
-                  </Card.Body>
-                </Stack>
+          <Row>
+            <Col xs={8}>
+              <Card className="translate-middle-y mx-5">
+                <Card.Img src="map.jpg" />
               </Card>
+              <Row>
+                {ContactData.map((element, index) => (
+                  <Col xs={2} key={index} className="translate-middle-y mx-4 mb-5" style={{ width:"350px" }}>
+                    <Card border="light" className="p-2 px-4 shadow">
+                      <Stack direction="horizontal" gap={3}>
+                        <Image src={element.img} />
+                        <Card.Body>
+                          <Card.Title className="fw-bolder">{element.title}</Card.Title>
+                          <Card.Subtitle className="text-muted text-black-50 fw-normal">
+                            {element.sub}
+                          </Card.Subtitle>
+                        </Card.Body>
+                      </Stack>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>
             </Col>
-          ))}
-        </Row> */}
+            <Col xs={4}>
+              <div
+                className="translate-middle-y bg-light-subtle p-4"
+                style={{ borderRadius: "10px" }}
+              >
+                <Form>
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Label>Full Name</Form.Label>
+                    <Form.Control type="name" placeholder="Your Name ..." />
+                  </Form.Group>
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Label>Email Address</Form.Label>
+                    <Form.Control type="email" placeholder="Your E-mail..." />
+                  </Form.Group>
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Label>Subject</Form.Label>
+                    <Form.Control type="name" placeholder="Subject..." />
+                  </Form.Group>
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlTextarea1"
+                  >
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control
+                      as="textarea"
+                      placeholder="Your Message"
+                      rows={5}
+                    />
+                  </Form.Group>
+                </Form>
+                <Buttons title="Send Message" />
+              </div>
+            </Col>
+          </Row>
+    
       </Container>
     </>
   );
