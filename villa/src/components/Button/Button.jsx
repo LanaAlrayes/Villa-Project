@@ -1,17 +1,19 @@
+/* eslint-disable react/prop-types */
 import Button from "react-bootstrap/Button";
 // import Badge from "react-bootstrap/Badge";
 // import { IoMdMail } from "react-icons/io";
 
-function Buttons() {
+function Buttons({title}) {
   return (
     <>
       <Button variant="dark">
         {/* <Badge pill className="bg-danger z-2 fs-6">
           <IoMdMail />
         </Badge> */}
-        Schedule a visit
+        {title}
       </Button>
     </>
   );
 }
 export default Buttons;
+// link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover
