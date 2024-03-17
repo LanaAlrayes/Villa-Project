@@ -19,8 +19,21 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/properties" element={<Properties title="Properties" />} />
-        <Route path="/propertyDetails" element={<PropertyDetails title="SINGLE PROPERTY" />} />
-        <Route path="/contactUS" element={<ContactUS />} />
+        <Route
+          path="/propertyDetails"
+          element={<PropertyDetails title="SINGLE PROPERTY" />}
+        />
+        <Route
+          path="/contactUS"
+          element={
+            <ContactUS
+              title="CONTACT US"
+              title1="| CONTACT US"
+              decs="Get In Touch"
+              decs1="With Our Agents"
+            />
+          }
+        />
       </Routes>
       <Footer />
     </div>
