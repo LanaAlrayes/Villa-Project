@@ -4,7 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 import Buttons from "../Button/Button";
-import { NavData } from "../../tools/Json";
+
+// import { NavLink } from "react-router-dom";
 
 function NavBar({ title }) {
   return (
@@ -15,17 +16,21 @@ function NavBar({ title }) {
             {title}
           </Navbar.Brand>
           <Navbar.Toggle />
+
           <Navbar.Collapse className="justify-content-end">
             <Nav>
-              {NavData.map((element, index) => {
-                return (
-                  <Navbar.Brand key={index}>
-                    <Nav.Link className="fs-6 text-dark fw-medium m-4" href="#">
-                      {element.desc}
-                    </Nav.Link>
-                  </Navbar.Brand>
-                );
-              })}
+              <Navbar.Brand>
+                <Nav.Link className="fs-6 fw-medium m-4" href="/">Home</Nav.Link>
+              </Navbar.Brand>
+              <Navbar.Brand>
+                <Nav.Link className="fs-6 fw-medium m-4" href="/properties">Properties</Nav.Link>
+              </Navbar.Brand>
+              <Navbar.Brand>
+                <Nav.Link className="fs-6 fw-medium m-4" href="/propertyDetails">Property Details</Nav.Link>
+              </Navbar.Brand>
+              <Navbar.Brand>
+                <Nav.Link className="fs-6 fw-medium m-4" href="/contactUS">Contact US</Nav.Link>
+              </Navbar.Brand>
             </Nav>
           </Navbar.Collapse>
           <Buttons title="Schedule a visit" />
