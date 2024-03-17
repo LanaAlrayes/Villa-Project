@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 function Buttons({title}) {
   return (
     <>
-      <Button variant="dark">
+      <Button className="bg-dark border border-dark text-light rounded-3">
         {/* <Badge pill className="bg-danger z-2 fs-6">
           <IoMdMail />
         </Badge> */}
