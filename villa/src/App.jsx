@@ -27,7 +27,11 @@ function App() {
         decs="Find Your Best Deal"
         decs1="Right Now!"
       />
-      <Property />
+      <Property
+        title="| PROPERTIES"
+        decs="We Provide The Best"
+        decs1="Property You Like"
+      />
     </div>
   );
 }
