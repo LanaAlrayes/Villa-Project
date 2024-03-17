@@ -50,7 +50,7 @@ export const ViewData = [
   { title: "24", sub: "Awwards Won 2023" },
 ];
 
-export  const PropertyData = [
+export const PropertyData = [
   {
     img: "public/property-01.jpg",
     title: "Luxury Villa",
@@ -78,7 +78,7 @@ export  const PropertyData = [
     title: "Luxury Villa",
     price: "$1460.000",
     subtitle: "26 Old Street Miami, OR 38540",
-    number:"5",
+    number: "5",
     number1: "4",
     number2: "225m2",
     number3: "3",
@@ -89,7 +89,7 @@ export  const PropertyData = [
     title: "Luxury Villa",
     price: "$584.500",
     subtitle: "12 New Street Miami, OR 12650",
-    number:"4",
+    number: "4",
     number1: "3",
     number2: "125m2",
     number3: "25th",
@@ -100,7 +100,7 @@ export  const PropertyData = [
     title: "Luxury Villa",
     price: "$925.600",
     subtitle: "34 Beach Street Miami, OR 42680",
-    number:"4",
+    number: "4",
     number1: "4",
     number2: "180m2",
     number3: "3th",
@@ -111,10 +111,18 @@ export  const PropertyData = [
     title: "Luxury Villa",
     price: "$450.000",
     subtitle: "22 New Street Portland, OR 16540",
-    number:"3",
+    number: "3",
     number1: "2",
     number2: "165m2",
     number3: "26th",
     number4: "3 cars",
+  },
+];
+export const ContactData = [
+  { img: "public/phone-icon.png", title: "010-020-0340", sub: "Phone Number" },
+  {
+    img: "public/email-icon.png",
+    title: "info@villa.co",
+    sub: "Business Email",
   },
 ];
