@@ -60,28 +60,28 @@ function VideoView({ title, decs, decs1 }) {
               >
                 <Form>
                   <Form.Group
-                    className="mb-3"
+                    className="mb-3 px-2"
                     controlId="exampleForm.ControlInput1"
                   >
                     <Form.Label>Full Name</Form.Label>
                     <Form.Control type="name" placeholder="Your Name ..." />
                   </Form.Group>
                   <Form.Group
-                    className="mb-3"
+                    className="mb-3 px-2"
                     controlId="exampleForm.ControlInput1"
                   >
                     <Form.Label>Email Address</Form.Label>
                     <Form.Control type="email" placeholder="Your E-mail..." />
                   </Form.Group>
                   <Form.Group
-                    className="mb-3"
+                    className="mb-3 px-2"
                     controlId="exampleForm.ControlInput1"
                   >
                     <Form.Label>Subject</Form.Label>
                     <Form.Control type="name" placeholder="Subject..." />
                   </Form.Group>
                   <Form.Group
-                    className="mb-3"
+                    className="mb-3 px-2"
                     controlId="exampleForm.ControlTextarea1"
                   >
                     <Form.Label>Message</Form.Label>
