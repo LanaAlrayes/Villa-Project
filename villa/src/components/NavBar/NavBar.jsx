@@ -28,7 +28,7 @@ function NavBar({ title }) {
               })}
             </Nav>
           </Navbar.Collapse>
-          <Buttons />
+          <Buttons title="Schedule a visit" />
         </Container>
       </Navbar>
     </>
