@@ -3,6 +3,7 @@ import Featured from "../components/Featured/Featured";
 import VideoView from "../components/VideoView/VideoView";
 import BestDeal from "../components/BestDeal/BestDeal";
 import Property from "../components/Property/Property";
+import ContactUs from "../components/ContactUs/ContactUs";
 
 function Home() {
   return (
@@ -25,6 +26,10 @@ function Home() {
         decs="We Provide The Best"
         decs1="Property You Like"
       />
+      <ContactUs
+       title="|  CONTACT US"
+       decs="Get In Touch With"
+       decs1="Our Agents" />
     </>
   );
 }
