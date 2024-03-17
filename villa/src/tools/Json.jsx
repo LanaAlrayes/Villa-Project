@@ -43,3 +43,9 @@ export const HeroData = [
     desc3: "penthouse",
   },
 ];
+
+export const ViewData = [
+  { title: "43", sub: "Buildings Finished now" },
+  { title: "12", sub: "Years Experience" },
+  { title: "24", sub: "Awwards Won 2023" },
+];

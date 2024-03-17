@@ -1,16 +1,14 @@
+/* eslint-disable react/prop-types */
 import "./VideoView.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Stack from "react-bootstrap/Stack";
-// import Image from "react-bootstrap/Image";
 
 import { ViewData } from "../../tools/Json";
 
-// import Badge from "react-bootstrap/Badge";
-
-function VideoView() {
+function VideoView({ title, decs, decs1 }) {
   return (
     <>
       <Card className="text-white">
@@ -18,18 +16,18 @@ function VideoView() {
         <Card.ImgOverlay className="d-flex justify-content-center align-content-center text-center mt-5">
           <div>
             <Card.Subtitle className="text-danger fw-bold text-uppercase">
-              | VIDEO VIEW
+              {title}
             </Card.Subtitle>
             <Card.Title className="fs-1 fw-bold mt-4">
-              Get Closer View &
+              {decs}
               <br />
-              Different Feeling
+              {decs1}
             </Card.Title>
           </div>
         </Card.ImgOverlay>
       </Card>
       <Container>
-        <Card className="translate-middle-y mx-5">
+        <Card className="translate-middle-y mx-5 mt-4">
           <Card.Img src="video-frame.jpg" />
         </Card>
         <Row className="d-flex justify-content-between">
