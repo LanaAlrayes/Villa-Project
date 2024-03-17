@@ -6,6 +6,7 @@ import Properties from "./pages/Properties";
 import PropertyDetails from "./pages/PropertyDetails";
 import ContactUS from "./pages/ContactUS";
 import { Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/propertyDetails" element={<PropertyDetails title="SINGLE PROPERTY" />} />
         <Route path="/contactUS" element={<ContactUS />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
