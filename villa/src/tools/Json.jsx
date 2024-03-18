@@ -16,7 +16,7 @@ export const NavData = [
 
 export const HeroData = [
   {
-    img: "./banner-01.jpg",
+    img: "banner-01.jpg",
     text: "Toronto, ",
     text1: "Canada",
     desc: "Hurry!",
@@ -25,7 +25,7 @@ export const HeroData = [
     desc3: "you",
   },
   {
-    img: "./banner-02.jpg",
+    img: "banner-02.jpg",
     text: "Melbourne, ",
     text1: "Australia",
     desc: "Be Quick!",
@@ -34,7 +34,7 @@ export const HeroData = [
     desc3: "town",
   },
   {
-    img: "./banner-03.jpg",
+    img: "banner-03.jpg",
     text: "Miami, ",
     text1: "South Florida",
     desc: "Act Now!",
@@ -52,7 +52,7 @@ export const ViewData = [
 
 export const PropertyData = [
   {
-    img: "./property-01.jpg",
+    img: "property-01.jpg",
     title: "Luxury Villa",
     price: "$2.264.000",
     subtitle: "18 New Street Miami, OR 97219",
@@ -63,7 +63,7 @@ export const PropertyData = [
     number4: "6 sport",
   },
   {
-    img: "./property-02.jpg",
+    img: "property-02.jpg",
     title: "Luxury Villa",
     price: "$1.180.000",
     subtitle: "54 Mid Street Florida, OR 27001",
@@ -74,7 +74,7 @@ export const PropertyData = [
     number4: "8 sport",
   },
   {
-    img: "./property-03.jpg",
+    img: "property-03.jpg",
     title: "Luxury Villa",
     price: "$1460.000",
     subtitle: "26 Old Street Miami, OR 38540",
@@ -85,7 +85,7 @@ export const PropertyData = [
     number4: "10 sport",
   },
   {
-    img: "./property-04.jpg",
+    img: "property-04.jpg",
     title: "Luxury Villa",
     price: "$584.500",
     subtitle: "12 New Street Miami, OR 12650",
@@ -107,7 +107,7 @@ export const PropertyData = [
     number4: "2 cars",
   },
   {
-    img: "./property-06.jpg",
+    img: "property-06.jpg",
     title: "Luxury Villa",
     price: "$450.000",
     subtitle: "22 New Street Portland, OR 16540",
@@ -119,9 +119,9 @@ export const PropertyData = [
   },
 ];
 export const ContactData = [
-  { img: "./phone-icon.png", title: "010-020-0340", sub: "Phone Number" },
+  { img: "phone-icon.png", title: "010-020-0340", sub: "Phone Number" },
   {
-    img: "./email-icon.png",
+    img: "email-icon.png",
     title: "info@villa.co",
     sub: "Business Email",
   },
