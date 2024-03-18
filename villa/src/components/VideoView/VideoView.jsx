@@ -28,7 +28,7 @@ function VideoView({ title, decs, decs1 }) {
       </Card>
       <Container>
         <Card className="translate-middle-y mx-5 mt-4">
-          <Card.Img src="video-frame.jpg" />
+          <Card.Img src="./video-frame.jpg" />
         </Card>
         <Row className="d-flex justify-content-between">
           {ViewData.map((element, index) => (
