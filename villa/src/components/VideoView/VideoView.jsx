@@ -12,7 +12,7 @@ function VideoView({ title, decs, decs1 }) {
   return (
     <>
       <Card className="text-white">
-        <Card.Img src="video-bg.jpg" />
+        <Card.Img src="./video-bg.jpg" />
         <Card.ImgOverlay className="d-flex justify-content-center align-content-center text-center mt-5">
           <div>
             <Card.Subtitle className="text-danger fw-bold text-uppercase">
